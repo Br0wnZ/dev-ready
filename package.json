@@ -1,0 +1,25 @@
+{
+  "name": "dev-ready",
+  "version": "1.0.0",
+  "description": "Guía para entrevistas técnicas como Ingeniero de software",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "generate:index": "node --loader tsx scripts/parse-readme.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "astro": "^5.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.0.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "typescript": "^5.0.0",
+    "tsx": "^4.0.0",
+    "vitest": "^1.0.0",
+    "@testing-library/astro": "^1.0.0",
+    "@types/node": "^20.0.0"
+  }
+}

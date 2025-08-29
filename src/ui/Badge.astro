@@ -1,0 +1,6 @@
+---
+const { class: cls = "", ...attrs } = Astro.props;
+---
+<span {...attrs} class={`inline-block text-xs px-2 py-0.5 bg-gray-200 rounded ${cls}`}>
+  <slot />
+</span>

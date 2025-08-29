@@ -1,0 +1,7 @@
+{
+  "app": {"title": "Dev Ready", "subtitle": "Technical interview guide"},
+  "search": {"placeholder": "Search..."},
+  "filters": {"all": "All", "category": "Category"},
+  "results": {"count": "Results: {count}"},
+  "language": {"es": "Spanish", "en": "English"}
+}

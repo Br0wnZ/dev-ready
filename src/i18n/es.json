@@ -1,0 +1,7 @@
+{
+  "app": {"title": "Dev Ready", "subtitle": "Guía para entrevistas técnicas"},
+  "search": {"placeholder": "Buscar..."},
+  "filters": {"all": "Todas", "category": "Categoría"},
+  "results": {"count": "Resultados: {count}"},
+  "language": {"es": "Español", "en": "Inglés"}
+}
