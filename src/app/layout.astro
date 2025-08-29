@@ -1,0 +1,14 @@
+---
+const { lang, dict } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang={lang} class="min-h-full">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{dict.app.title}</title>
+  </head>
+  <body class="font-sans bg-white text-gray-900">
+    <slot />
+  </body>
+</html>

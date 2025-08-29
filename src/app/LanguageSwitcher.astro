@@ -1,0 +1,17 @@
+---
+import { getDict } from "./i18n";
+const { lang } = Astro.props;
+const dict = getDict(lang);
+---
+<select id="lang-switcher" aria-label="language" class="border p-2 rounded">
+  <option value="es" selected={lang === 'es'}>{dict.language.es}</option>
+  <option value="en" selected={lang === 'en'}>{dict.language.en}</option>
+</select>
+<script client:load>
+  const select = document.getElementById('lang-switcher');
+  select?.addEventListener('change', (e) => {
+    const value = (e.target as HTMLSelectElement).value;
+    const path = window.location.pathname.replace(/^\/(en|es)/, '');
+    window.location.pathname = `/${value}${path}`;
+  });
+</script>

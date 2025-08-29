@@ -1,6 +1,17 @@
 # dev-ready
 # Guía para entrevistas técnicas como Ingeniero de software
 
+## Desarrollo
+
+Instala dependencias y genera el índice:
+
+```bash
+npm install
+npm run generate:index
+npm run dev
+```
+
+
 ## Índice
 
 - [Guía para entrevistas técnicas como Ingeniero de software](#guía-para-entrevistas-técnicas-como-ingeniero-de-software)

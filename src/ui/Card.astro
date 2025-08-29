@@ -1,0 +1,6 @@
+---
+const { class: cls = "", ...attrs } = Astro.props;
+---
+<article {...attrs} class={`p-4 border-b ${cls}`}>
+  <slot />
+</article>
