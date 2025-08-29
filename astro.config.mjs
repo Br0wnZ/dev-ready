@@ -1,9 +1,11 @@
-import tailwind from "@astrojs/tailwind";
+import { defineConfig } from 'astro/config';
+import tailwindcss from '@tailwindcss/vite';
 
-/** @type {import('astro').AstroUserConfig} */
-export default {
-  integrations: [tailwind({ applyBaseStyles: false })],
+export default defineConfig({
+  vite: {
+    plugins: [tailwindcss()]
+  },
   experimental: {
     assets: true
   }
-};
+});
