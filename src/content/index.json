@@ -1,0 +1,200 @@
+[
+  {
+    "id": "principios-solid",
+    "title": "Principios SOLID",
+    "category": "Buenas prácticas",
+    "url": "#principios-solid"
+  },
+  {
+    "id": "principios-dry-kiss-yagni-grasp-y-lod",
+    "title": "Principios DRY, KISS, YAGNI, GRASP y LoD",
+    "category": "Buenas prácticas",
+    "url": "#dry"
+  },
+  {
+    "id": "clean-code",
+    "title": "Clean Code",
+    "category": "Buenas prácticas",
+    "url": "#clean-code"
+  },
+  {
+    "id": "clean-architecture",
+    "title": "Clean architecture",
+    "category": "Buenas prácticas",
+    "url": "#clean-architecture"
+  },
+  {
+    "id": "angular",
+    "title": "Angular",
+    "category": "Buenas prácticas en...",
+    "url": "#angular"
+  },
+  {
+    "id": "c",
+    "title": "C++",
+    "category": "Buenas prácticas en...",
+    "url": "#c"
+  },
+  {
+    "id": "dart",
+    "title": "Dart",
+    "category": "Buenas prácticas en...",
+    "url": "#dart"
+  },
+  {
+    "id": "django",
+    "title": "Django",
+    "category": "Buenas prácticas en...",
+    "url": "#django"
+  },
+  {
+    "id": "flutter",
+    "title": "Flutter",
+    "category": "Buenas prácticas en...",
+    "url": "#flutter"
+  },
+  {
+    "id": "java",
+    "title": "Java",
+    "category": "Buenas prácticas en...",
+    "url": "#java"
+  },
+  {
+    "id": "javascript",
+    "title": "Javascript",
+    "category": "Buenas prácticas en...",
+    "url": "#javascript"
+  },
+  {
+    "id": "php",
+    "title": "PHP",
+    "category": "Buenas prácticas en...",
+    "url": "#php"
+  },
+  {
+    "id": "python",
+    "title": "Python",
+    "category": "Buenas prácticas en...",
+    "url": "#python"
+  },
+  {
+    "id": "reactjs",
+    "title": "React.js",
+    "category": "Buenas prácticas en...",
+    "url": "#reactjs"
+  },
+  {
+    "id": "typescript",
+    "title": "Typescript",
+    "category": "Buenas prácticas en...",
+    "url": "#typescript"
+  },
+  {
+    "id": "vuejs",
+    "title": "Vue.js",
+    "category": "Buenas prácticas en...",
+    "url": "#vuejs"
+  },
+  {
+    "id": "complejidad-algoritmica",
+    "title": "Complejidad algorítmica",
+    "category": "Algoritmos y estructuras de datos",
+    "url": "#complejidad-algorítmica"
+  },
+  {
+    "id": "algoritmos",
+    "title": "Algoritmos",
+    "category": "Algoritmos y estructuras de datos",
+    "url": "#algoritmos"
+  },
+  {
+    "id": "estructuras-de-datos",
+    "title": "Estructuras de datos",
+    "category": "Algoritmos y estructuras de datos",
+    "url": "#estructuras-de-datos"
+  },
+  {
+    "id": "practicar-algoritmos-y-estructuras-de-datos",
+    "title": "Practicar algoritmos y estructuras de datos",
+    "category": "Algoritmos y estructuras de datos",
+    "url": "#practicar-algoritmos-y-estructuras-de-datos"
+  },
+  {
+    "id": "visualgo",
+    "title": "Visualgo",
+    "category": "Visualizar algoritmos",
+    "url": "#visualgo"
+  },
+  {
+    "id": "orms",
+    "title": "ORM's",
+    "category": "Bases de datos",
+    "url": "#orms"
+  },
+  {
+    "id": "frontend",
+    "title": "Frontend",
+    "category": "Arquitectura de Software",
+    "url": "#frontend"
+  },
+  {
+    "id": "react-clean-architecture",
+    "title": "React Clean Architecture",
+    "category": "Arquitectura de Software",
+    "url": "#react-clean-architecture"
+  },
+  {
+    "id": "vue-js-clean-architecture",
+    "title": "Vue JS Clean Architecture",
+    "category": "Arquitectura de Software",
+    "url": "#vue-js-clean-architecture"
+  },
+  {
+    "id": "backend",
+    "title": "Backend",
+    "category": "Arquitectura de Software",
+    "url": "#backend"
+  },
+  {
+    "id": "clean-architecture-express-js",
+    "title": "Clean Architecture Express JS",
+    "category": "Arquitectura de Software",
+    "url": "#clean-architecture-express-js"
+  },
+  {
+    "id": "clean-architecture-java",
+    "title": "Clean Architecture Java",
+    "category": "Arquitectura de Software",
+    "url": "#clean-architecture-java"
+  },
+  {
+    "id": "clean-architecture-php",
+    "title": "Clean Architecture PHP",
+    "category": "Arquitectura de Software",
+    "url": "#clean-architecture-php"
+  },
+  {
+    "id": "clean-architecture-python",
+    "title": "Clean Architecture Python",
+    "category": "Arquitectura de Software",
+    "url": "#clean-architecture-python"
+  },
+  {
+    "id": "preguntas-de-frontend",
+    "title": "Preguntas de Frontend",
+    "category": "Preguntas más frecuentes",
+    "url": "#preguntas-de-frontend"
+  },
+  {
+    "id": "preguntas-de-backend",
+    "title": "Preguntas de Backend",
+    "category": "Preguntas más frecuentes",
+    "url": "#preguntas-de-backend"
+  },
+  {
+    "id": "workflows",
+    "title": "Workflows",
+    "category": "Control de Versiones",
+    "url": "#workflows"
+  }
+]

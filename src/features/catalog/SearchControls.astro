@@ -1,0 +1,44 @@
+---
+import Input from "../../ui/Input.astro";
+import Chip from "../../ui/Chip.astro";
+import type { Topic } from "../../core/entities/topic";
+const { topics, dict } = Astro.props as { topics: Topic[]; dict: any };
+const categories = Array.from(new Set(topics.map(t => t.category))).sort();
+const resultTemplate = dict.results.count;
+---
+<div class="space-y-2">
+  <Input id="search" type="search" placeholder={dict.search.placeholder} />
+  <div id="chips" class="flex gap-2 overflow-x-auto">
+    <Chip data-category="" class="bg-gray-200">{dict.filters.all}</Chip>
+    {categories.map(cat => <Chip data-category={cat}>{cat}</Chip>)}
+  </div>
+  <p id="result-count" aria-live="polite" class="text-sm"></p>
+</div>
+<script client:load>
+  const normalize = (s)=>s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+  const input = document.getElementById('search') as HTMLInputElement;
+  const chips = Array.from(document.querySelectorAll('#chips button')) as HTMLButtonElement[];
+  const items = Array.from(document.querySelectorAll('#topics li')) as HTMLElement[];
+  const count = document.getElementById('result-count')!;
+  const template = {JSON.stringify(resultTemplate)};
+  let activeCategory = '';
+  function apply(){
+    const text = normalize(input.value);
+    let visible = 0;
+    for (const li of items){
+      const title = normalize(li.dataset.title || '');
+      const category = normalize(li.dataset.category || '');
+      const show = (!text || title.includes(text)) && (!activeCategory || category === normalize(activeCategory));
+      li.style.display = show ? '' : 'none';
+      if(show) visible++;
+    }
+    count.textContent = template.replace('{count}', String(visible));
+  }
+  input.addEventListener('input', apply);
+  chips.forEach(c => c.addEventListener('click', () => {
+    activeCategory = c.dataset.category || '';
+    chips.forEach(ch => ch.classList.toggle('bg-gray-300', ch === c));
+    apply();
+  }));
+  apply();
+</script>

@@ -1,0 +1,26 @@
+---
+import Layout from "../../src/app/layout.astro";
+import { getDict } from "../../src/app/i18n";
+import { FSTopicRepo } from "../../src/data/fs-topic-repo";
+import TopicList from "../../src/features/catalog/TopicList.astro";
+import SearchControls from "../../src/features/catalog/SearchControls.astro";
+import LanguageSwitcher from "../../src/app/LanguageSwitcher.astro";
+
+const { lang = 'es' } = Astro.params;
+const dict = getDict(lang);
+const repo = new FSTopicRepo();
+const topics = await repo.listAll();
+---
+<Layout lang={lang} dict={dict}>
+  <header class="p-4 flex justify-between items-center">
+    <div>
+      <h1 class="text-xl font-bold">{dict.app.title}</h1>
+      <p class="text-sm text-gray-600">{dict.app.subtitle}</p>
+    </div>
+    <LanguageSwitcher lang={lang} />
+  </header>
+  <main class="p-4 space-y-4">
+    <SearchControls topics={topics} dict={dict} />
+    <TopicList topics={topics} />
+  </main>
+</Layout>

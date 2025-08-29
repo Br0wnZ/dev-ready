@@ -1,0 +1,16 @@
+---
+import Card from "../../ui/Card.astro";
+import Badge from "../../ui/Badge.astro";
+import type { Topic } from "../../core/entities/topic";
+const { topics } = Astro.props as { topics: Topic[] };
+---
+<ul id="topics" class="divide-y">
+  {topics.map((t) => (
+    <li data-title={t.title} data-category={t.category} class="p-2">
+      <Card class="flex flex-col gap-1">
+        {t.url ? <a href={t.url} class="text-blue-600 underline">{t.title}</a> : t.title}
+        <Badge>{t.category}</Badge>
+      </Card>
+    </li>
+  ))}
+</ul>
